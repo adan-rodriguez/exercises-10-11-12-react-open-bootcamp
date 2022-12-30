@@ -4,7 +4,14 @@ const Component = () => {
   const [state, setState] = useState(true);
 
   const handleMouseOver = (e) => {
-    e.target.style.background = "rgb(200, 153, 52)";
+    e.target.style.background =
+      "rgb(" +
+      Math.round(Math.random() * 255) +
+      ", " +
+      Math.round(Math.random() * 255) +
+      ", " +
+      Math.round(Math.random() * 255) +
+      ")";
   };
 
   const handleMouseLeave = (e) => {
